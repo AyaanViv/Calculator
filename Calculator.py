@@ -3,6 +3,8 @@ import tkinter as tk
 root = tk.Tk()
 root.title('Calculator')
 root.configure(background='grey')
+root.geometry('275x287')
+root.resizable(False, False)
 
 calculation = ''
 
@@ -28,7 +30,7 @@ def clear():
 
 display = tk.StringVar()
 
-entry = tk.Entry(root, textvariable=display).grid(column=0, columnspan=4, ipadx=70)
+entry = tk.Entry(root, textvariable=display, font=('ariel', 18), width=8).grid(column=0, columnspan=4, ipadx=70)
 
 button_backround_colour = 'grey'
 
